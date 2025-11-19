@@ -1,76 +1,64 @@
-Sistema de Doação de Sangue
-📋 Sobre o Projeto
+🩸 Doe Sangue — Sistema de Agendamento e Cadastro de Doadores
 
-Plataforma web desenvolvida para facilitar o cadastro de doadores, login, visualização de informações sobre doação e realização de agendamentos. O objetivo é conectar doadores a centros de coleta de forma rápida e eficiente.
+Plataforma web criada para facilitar o processo de cadastro, login e agendamento de doações de sangue. O projeto conecta doadores a centros de coleta, tornando o processo mais rápido, intuitivo e acessível.
 
-🚀 Funcionalidades Implementadas
-EPIC 1 – Autenticação e Base do Sistema
+✨ Funcionalidades Implementadas
+🔐 EPIC 1 — Autenticação e Base do Sistema
 
-Cadastro de usuário
+Cadastro de usuários
 
-Login com persistência de sessão
+Login com validação e persistência
 
-Navegação autenticada
+Navegação protegida
 
-Página inicial com informações sobre a doação de sangue
+Página inicial com informações sobre doação
 
-Design responsivo e acessível
+Interface responsiva
 
-EPIC 2 – Agendamentos e Estrutura do Sistema
-
-Página de Agendamento de Doação
+📅 EPIC 2 — Agendamento
 
 Seleção de data, horário e local
 
-Resumo das informações escolhidas
+Resumo das informações da doação
 
-Integração com backend (endpoint de criação de doação)
+Envio de agendamento ao backend
 
-Página de Sobre, apresentando o projeto e sua missão
+Página “Sobre” explicando o sistema
 
-Obs.: A funcionalidade de confirmar o agendamento ainda está em desenvolvimento.
 
-🎨 Interface e Experiência do Usuário
 
-Componentes reutilizáveis (Navbar, Cards, Botões, Selects, Calendário)
+🖥️ Frontend (React + Vite)
 
-Layout responsivo
-
-Feedback visual com toasts
-
-Interface moderna e limpos seguindo um design system padronizado
-
-🗄️ Banco de Dados
-
-O projeto utiliza MySQL para armazenar:
-
-Usuários
-
-Agendamentos
-
-Dados relacionados ao processo de doação
-
-A estrutura inclui tabelas para usuários e doações, permitindo integração com o backend Java Spring Boot.
-
-🧩 Tecnologias Utilizadas
-Frontend
-
-React + Vite
-
-TypeScript
+React com TypeScript
 
 TailwindCSS
 
 Shadcn/UI
 
-Lucide Icons
+Hooks personalizados
 
-Backend 
+Toasts de feedback
 
-Java 17
+Componentes reutilizáveis (Navbar, Cards, Calendário, Selects)
 
-Spring Boot
+🛠️ Backend (Java + Spring Boot)
+
+API REST para cadastro, login e doações
 
 JPA / Hibernate
 
 MySQL
+
+Validação e persistência dos dados
+
+🗄️ Banco de Dados
+
+Estrutura contendo:
+
+Tabela de usuários
+
+Tabela de doações
+
+Relacionamento baseado no usuarioId
+
+O banco é integrado ao backend via JPA.
